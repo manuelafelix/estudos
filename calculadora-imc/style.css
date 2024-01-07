@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: #50B57D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-calculator {
+    width: 25%;
+    padding: 25px 15px;
+    background-color: #FBFBFA;
+    border-radius: 10px;
+    box-shadow: 10px 10px 12px #1e4d319d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-calculator > h1 {
+    width: 80%;
+    margin: 0;
+    font-size: 22pt;
+    color: #2d8952;
+    border-bottom: #2d8952 solid 2px;
+}
+
+.input-field {
+    width: 80%;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.input-field > label {
+    color: #2d8952;
+}
+
+.input-field > input {
+   width: 100%;
+   padding: 5px 0px; 
+   border: none;
+   border-bottom: #D1DAD7 solid 2px;
+   background-color: #FBFBFA;
+   color: #454545;
+   font-size: 12pt;
+   outline: none;
+}
+
+.input-field > input:focus {
+    border-bottom: #2d8952 solid 2px;
+}
+
+.btn-calculate {
+    width: 80%;
+    padding: 12px 0;
+    margin: 15px 0;
+    background-color: #2d8952;
+    border: none;
+    border-radius: 3px;
+    font-size: 12pt;
+    font-weight: 700;
+    color: #FBFBFA;
+    cursor: pointer;
+}
+
+.btn-calculate:hover {
+    background-color: #459b6c;
+    transition: 0.2s;
+}
+
+.div-result {
+    width: 80%;
+    border-top: #D1DAD7 solid 2px;
+}
+
+#result {
+    color: #454545;
+    font-size: 14pt;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .card-calculator {
+        width: 90%;
+    }
+}
+
+
+
+
