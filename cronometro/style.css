@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightpink;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #fff;
+    width: 30%;
+    height: 40%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px palevioletred;
+    text-align: center;
+}
+
+#timer {
+    font-family: 'Tektur', sans-serif;
+    margin: 50px 0px;
+    font-size: 65px;
+}
+
+button {
+    background-color: palevioletred;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: pink;
+    transition: 0.5s;
+}
+
+button i {
+    width: 50px;
+    padding: 10px;
+    font-size: 2rem;
+    color: #fff;
+}
+
