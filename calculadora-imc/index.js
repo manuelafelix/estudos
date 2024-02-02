@@ -1,10 +1,11 @@
 function calcularImc() {
-    let peso = document.getElementById('peso').value;
-    let altura = document.getElementById('altura').value;
+    let peso = Number(document.getElementById('peso').value.replace(',', '.'));
+    let altura = Number(document.getElementById('altura').value.replace(',', '.'));
+
     let result = document.getElementById('result');
 
     if (peso > 0 && altura > 0) {
-        let imc = Number((peso / (altura * altura)).toFixed(1));
+        let imc = (peso / (altura * altura)).toFixed(1);
 
         if (imc < 18.5)
             result.textContent = `${imc}. Abaixo do peso`;
