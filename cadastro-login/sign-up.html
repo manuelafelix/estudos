@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sign-Up</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <form id="signup-form">
+                <header id="signup-header">
+                    <h1>Sign-Up</h1>
+                </header>
+
+                <label for="signup-email">E-mail:</label>
+                <input type="email" name="email" id="signup-email" placeholder="Insira seu e-mail">
+
+                <label for="signup-password">Senha:</label>
+                <input type="password" name="password" id="signup-password" placeholder="Insira uma senha">
+
+                <label for="signup-password-confirm">Confirme sua senha:</label>
+                <input type="password" name="password" id="signup-password-confirm" placeholder="Confirme sua senha">
+
+                <button id="signup-button">Sign-up</button>
+                <span id="signup-error" class="hidden"></span>
+            </form>
+            <div class="success hidden">
+                <i class="fa-solid fa-circle-check"></i>
+                <p>Cadastro realizado com sucesso! <a href="login.html">Faça Login</a></p>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/sign-up.js"></script>
+</body>
+
+</html>
